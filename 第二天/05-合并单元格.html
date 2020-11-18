@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合并单元格</title>
+</head>
+<body>
+    <!-- 合并单元格步骤：
+        1.先区分是行合并还是列合并，行合并用rowspan,列合并用colspan
+        2.找到目标单元格的标签td, 写上rowspan="合并几行"，colspan="合并几列"
+        3.删掉多余的行或列
+    
+    -->
+    <table border="1" width="100%" height="249" cellpadding="0" cellspacing="0">
+        <tr>
+            <td></td>
+            <td colspan="2"></td>
+
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
