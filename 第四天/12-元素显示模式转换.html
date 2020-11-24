@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素显示模式转换</title>
+    <style>
+        a{
+            width: 200px;
+            height: 300px;
+            background-color:pink;
+            /* 把行内元素转换为块级元素 */
+            display: block;
+        }
+        div { 
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            /* 块级转行级，转到一行 */
+            display:inline;
+        }
+        span{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+            /* 行级转行内快 */
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">金星叔叔</a>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+    <span>行内转行内块</span>
+    <span>行内转行内块</span>
+</body>
+</html>

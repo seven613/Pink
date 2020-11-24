@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接伪类选择器</title>
+    <style>
+        /* 伪类选择器顺序不能颠倒，必须link,visited,hove,active */
+        /* 链接都是单独写样式 */
+        /* 没有访问过的链接 的样式*/
+        a:link{
+            color:#333;
+            text-decoration: none;
+        }
+        /* 已经访问过的链接的样式 */
+        a:visited {
+            color:orange;
+        }
+        /* 鼠标穿过链接时的样式 */
+        a:hover {
+            color:skyblue;
+        }
+        /* 鼠标按下还未弹起时的样式 */
+        a:active{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="href">小猪佩琪</a>
+</body>
+</html>
