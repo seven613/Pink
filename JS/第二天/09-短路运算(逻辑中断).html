@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-短路运算</title>
+    <script>
+        //1.逻辑与 表达式1 && 表达式2 短路运算口诀：表达式1为真，返回表达式2；表达式1为假，返回表达式1
+        console.log(123 && 456); // 456
+        console.log(0 && 456); // 0
+        console.log('' && 'afasd' && '这是一个测试');
+        //2. 逻辑或 表达式 || 表达式2 短路运算口诀：表达式1为真，返回表达式2；表达式1为假，返回表达式2
+        console.log(123 || 456);
+        console.log(123 || 456 || 456 + 8348);
+        console.log(0 || 456);
+
+
+        var num = 0;
+        console.log(123 || num++);
+        console.log(num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
