@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-计算数组的和以及平均值</title>
+    <script>
+        //1.计算数组[2,4,6,7,3]的和与平均值
+        //(1)声明一个变量sum
+        //(2)遍历这个数组，把每个数组元素加到sum里面
+        //(3)用求和变量sum除以数组的长度就可以得到数组的平均值
+        var arr = [2, 4, 6, 7, 3]
+        var sum = 0;
+        var average =0;
+        for (var i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        average = sum / arr.length;
+        console.log(sum,average);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
