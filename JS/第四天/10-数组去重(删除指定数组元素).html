@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>06-数组转换为分割字符串</title>
+    <title>10-数组去重</title>
     <script>
-        //将数组转换为字符串，用|或其他符号分割
-        var arr = ['red', 'blue', 'green', 'pink']
-        var str = '';
-        var seq = '>'
+        var arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7];
+        var newArr = [];
         for (var i = 0; i < arr.length; i++) {
-            str += arr[i] + seq
+            if (arr[i] !=0) {
+                newArr[newArr.length] = arr[i];
+            }
         }
-        console.log(str)
+        console.log(arr)
     </script>
 </head>
-
 <body>
-
+    
 </body>
-
 </html>
