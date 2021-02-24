@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-构造函数和对象</title>
+    <script>
+        //构造函数  --> 类
+        function Star(name, sex, age) {
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.sing = function (sang) {
+                console.log(sang);
+            }
+        }
+        //对象   类的实例化
+        var ldh = new Star('刘德华', '男', 19);
+        ldh.sing('冰雨');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

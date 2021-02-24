@@ -18,12 +18,14 @@
 
         //1.构造函数名首字母要大写
         //2.构造函数不需要return 
+        //3.使用构造函数必须用new
         function Star(uname, age, sex) {
             this.name = uname;
             this.age = age;
             this.sex = sex;
         }
         var ldh = new Star('刘德华', 18, '男');
+        console.log(typeof ldh);
     </script>
 </head>
 
