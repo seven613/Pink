@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-获得Date总得毫秒数</title>
+    <script>
+        var date = new Date();
+        //获取总的毫秒数，valueOf  getTime()
+        console.log(date.valueOf());
+        console.log(date.getTime());
+        //2.简单写法，最常用的方法
+        var date1 = +new Date();
+        console.log(date1);
+        //3.H5新增的方法
+        console.log(Date.now());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
