@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">盒子</div>
+    <div class="box">盒子</div>
+    <div id="nav">
+        <ul>
+            <li>首页</li>
+            <li>产品</li>
+        </ul>
+    </div>
+    <script>
+        //1.getELementsByClassName 通过元素的类名获取
+        var boxs = document.getElementsByClassName('box');
+        console.log('boxs',boxs);
+        //2.querySelector 通过选择器获取第一个元素 .box 类选择器，#nav id选择器
+        var firstBox = document.querySelector('.box');
+        console.log('firstBox',firstBox);
+        var nav = document.querySelector('#nav');
+        console.log('nav',nav);
+        var li = document.querySelector('li');
+        console.log('li',li);
+        //3.querySelectorAll 通过选择器获取所有院所
+        var allBox = document.querySelectorAll('.box');
+        console.log('allBox',allBox);
+    </script>
+</body>
+
+</html>

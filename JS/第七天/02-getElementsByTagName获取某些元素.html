@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li>第一行</li>
+        <li>第二行</li>
+        <li>第三行</li>
+        <li>第四行</li>
+        <li>第五行</li>
+    </ul>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <script>
+        //获取元素对象集合，以伪数组的形式存储
+        //只有一个元素，也是返回伪数组
+        //没有元素，返回一个空的伪数组
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[2])
+        //
+        var elem = document.getElementsByTagName('ol');//伪数组
+        console.dir(elem);
+        var lis1 = elem[0].getElementsByTagName('li');//必须是数组元素中的那一个
+        console.log(lis1);
+    </script>
+</body>
+
+</html>

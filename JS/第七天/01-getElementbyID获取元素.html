@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="time">2021-3-1</div>
+
+    <script>
+        //1.文档从上往下加载，所以必须先有标签，然后才能获取，写<script>
+        //2.get 获得 element 元素  驼峰命名法
+        //3.参数id ：大小写敏感的字符串
+        //4.返回一个元素对象
+        var timer = document.getElementById("time")
+        console.log(timer);
+        console.log(typeof timer);
+        //5.console.dir 元素对象的所有方法
+        console.dir(timer);
+    </script>
+</body>
+
+</html>
