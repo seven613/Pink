@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        上午好！欢迎您～～
+    </div>
+
+    <img src="images/ldh.jpg">
+
+    <script>
+        //1.获取当前日期
+        //2.判断上下午晚上
+        //3.显示不同图片
+        //4.显示不同问候域
+        var img = document.querySelector('img');
+        var div = document.querySelector('div');
+        var date = new Date();
+        var h = date.getHours();
+        if (h < 12) {
+            img.src = "images/ldh.jpg";
+            div.innerHTML = "上午好";
+        } else if (h < 18) {
+            img.src = "images/zxy.jpg";
+            div.innerHTML = "下午好";
+        } else {
+            img.src = "images/ldh.jpg";
+            div.innerHTML = "晚上好";
+        }
+    </script>
+
+</body>
+
+</html>
