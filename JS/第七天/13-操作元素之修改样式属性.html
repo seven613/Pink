@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        //1.获取元素
+        var div = document.querySelector('div');
+        //2.注册事件 
+        div.onclick = function () {
+            //驼峰命名法
+            //会生成行内样式，权重最高
+            this.style.backgroundColor = 'red';
+            this.style.width='500px';
+        }
+    </script>
+</body>
+
+</html>
