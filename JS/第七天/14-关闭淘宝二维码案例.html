@@ -45,8 +45,12 @@
         <i class="close-btn">×</i>
     </div>
     <script>
-        var div = document.querySelector('.box');
-        var i
+        var btn = document.querySelector('.close-btn');
+        var box = document.querySelector('.box');
+        btn.onclick =function(){
+            box.style.display='none';
+
+        }
     </script>
 </body>
 
