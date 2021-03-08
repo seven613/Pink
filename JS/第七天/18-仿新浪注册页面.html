@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,53 @@
     <style>
         div {
             width: 600px;
-            margin:100px auto;
+            margin: 100px auto;
         }
-        .message{
-            display: inline-block;
-            font-size:12px;
-            
 
+        .message {
+            display: inline-block;
+            font-size: 12px;
+            color: #999;
+            background: url(images/close.jpg) no-repeat left center;
+            padding-left: 20px;
+
+        }
+
+        .wrong {
+            color: red;
+            background-image: url(images/open.jpg);
+        }
+        .right{
+            color:green;
+            background-image: url(images/close.jpg);
         }
     </style>
 </head>
+
 <body>
     <div class="register">
         <input type="password" class="ipt">
         <p class="message">请输入6~16位密码</p>
     </div>
+    <script>
+        //首先判断表单是否失去焦点 onblur
+        //如果输入正确，则提示正确的信息，颜色为绿色的小图片
+        //如果输入不是6到16位,则提示信息为红色 小图片变化
+        //变化的样式多，因此采用className
+        // 1.获取元素
+        var ipt = document.querySelector('.ipt');
+        var message = document.querySelector('.message');
+        //2.注册事件
+        ipt.onblur = function () {
+            if (this.value.length < 6 || this.value.length > 16) {
+                message.className = ' message wrong';
+                message.innerHTML = "您输入的密码位数不正确，必须是6～16位！";
+            }else {
+                message.className = ' message right';
+                message.innerHTML = "密码输入正确";
+            }
+        }
+    </script>
 </body>
+
 </html>
