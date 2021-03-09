@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo" index="1"></div>
+    <script>
+        //获取元素属性的两种方式
+        var div = document.querySelector('div');
+        console.log(div.id); //获取内置属性值,不能获取自定义属性
+        console.log(div.getAttribute('id')); //可以获取所有属性值，包括自定义属性
+        console.log(div.getAttribute('index'));
+        //设置属性值
+        div.id='test';
+        div.setAttribute('index','2');
+        //移除属性
+        div.removeAttribute('index');
+    </script>
+</body>
+
+</html>

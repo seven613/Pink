@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10">123</textarea>
+    <button>发布</button>
+    <ul></ul>
+    <script>
+        var btn = document.querySelector('button');
+        var ul = document.querySelector('ul');
+        var text = document.querySelector('textarea');
+
+        btn.onclick = function () {
+            if (text.value == '') {
+                alter('您没有输入内容！');
+                return false;
+            } else {
+                var li = document.createElement('li');
+                li.innerHTML = text.value;
+                // ul.appendChild(li);
+                ul.insertBefore(li,ul.children[0]);
+                
+            }
+
+        }
+    </script>
+</body>
+
+</html>
